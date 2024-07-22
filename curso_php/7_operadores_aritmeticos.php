@@ -21,4 +21,22 @@ echo "<br/>"; # Salto de línea
 echo $numero1 + $numero2; 
 # ^ ambas producen el mismo resultado
 
+echo "<br/>";
+echo $numero2 - $numero1 . " | " . $numero1 - $numero2;
+
+echo "<br/>";
+echo $numero1 * $numero2; # 2 x 5
+
+echo "<br/>";
+echo $numero2 ** $numero1; # 5 ^ 2
+
+echo "<br/>";
+echo $numero2 / $numero1; # 5 / 2
+
+echo "<br/>";
+echo $numero2 % $numero1; # Resto de 5 / 2
+
+echo "<br/>";
+echo (2+4) * 5; # (2+4) * 5 = 6 * 5 = 30 | Se priorizan los paréntesis
+
 ?>
