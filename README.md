@@ -1,4 +1,4 @@
-<table>
+<table border="1" align="center">
   <tr>
     <th>Carpeta</th>
     <th>Curso usado</th>
