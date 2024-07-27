@@ -16,7 +16,7 @@ $clave2 = limpiar($_POST["usuario_clave_2"]);
 if($nombre == "" || $apellido == "" || $usuario == "" || $email == "" || $clave1 == "" || $clave2 == "") {
     echo '
     <div class="notification is-danger is-light">
-        Deben completarse los campos obligatorios.
+        Todos los campos son obligatorios.
     </div>
     ';
     exit();

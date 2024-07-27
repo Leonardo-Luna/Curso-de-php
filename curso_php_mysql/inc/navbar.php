@@ -50,7 +50,7 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-info">
+          <a class="button is-info" href="index.php?view=user/update&user_id_update=<?php echo $_SESSION['id']; ?>">
             <strong>Mi cuenta</strong>
           </a>
           <a class="button is-light" href="index.php?view=user/logout">Salir</a>

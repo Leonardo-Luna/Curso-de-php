@@ -5,16 +5,22 @@
 
 		<div class="field">
 			<label class="label">Usuario</label>
-			<div class="control">
+			<p class="control has-icons-left">
 			    <input class="input" type="text" name="login_usuario" pattern="[a-zA-Z0-9]{4,20}" maxlength="20" placeholder="Nombre de usuario" required >
-			</div>
+				<span class="icon is-small is-left">
+					<i class="fa-solid fa-user" style="color: #ffffff;"></i>
+				</span>
+			</p>
 		</div>
 
 		<div class="field">
 		  	<label class="label">Clave</label>
-		  	<div class="control">
+		  	<p class="control has-icons-left">
 		    	<input class="input" type="password" name="login_clave" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" placeholder="Contraseña" required >
-		  	</div>
+				<span class="icon is-small is-left">
+					<i class="fa-solid fa-lock" style="color: #ffffff;"></i>
+				</span>
+			</p>
 		</div>
 
 		<p class="has-text-centered mb-4 mt-3">
