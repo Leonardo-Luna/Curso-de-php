@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 $buscador = limpiar($_POST["modulo_buscador"]);
 $modulos = ["usuario", "categoria", "producto"]; # Campo value el input
@@ -34,7 +34,12 @@ if(in_array($buscador, $modulos)) {
             }
             else {
                 $_SESSION[$buscador] = $txt;
-                header("Location: index.php?view=" . $modulos_url , true, 303);
+                if(headers_sent()) {
+                    echo "<script>window.location.href='index.php?view={$modulos_url}';</script>";
+                }
+                else {
+                    header("Location: index.php?view={$modulos_url}", true, 303);
+                }
                 exit();
             }
         }
@@ -43,7 +48,13 @@ if(in_array($buscador, $modulos)) {
     # Eliminar la búsqueda
     if(isset($_POST["eliminar_buscador"])) {
         unset($_SESSION[$buscador]);
-        header("Location: index.php?view=" . $modulos_url, true, 303);
+
+        if(headers_sent()) {
+            echo "<script>window.location.href='index.php?view={$modulos_url}';</script>";
+        }
+        else {
+            header("Location: index.php?view={$modulos_url}", true, 303);
+        }
         exit();
     }
 

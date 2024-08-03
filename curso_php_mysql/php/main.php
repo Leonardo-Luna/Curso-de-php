@@ -2,7 +2,13 @@
 
 # Conexión a la base de datos
 function conexion() {
-    $pdo = new PDO("mysql:host=localhost;dbname=inventario", "root", "");
+
+    $host = getenv("MYSQL_HOST") ?: "localhost";
+    $dbname = getenv("MYSQL_DATABASE") ?: "inventario";
+    $username = getenv("MYSQL_USER") ?: "root";
+    $password = getenv("MYSQL_PASSWORD") ?: "";
+
+    $pdo = new PDO("mysql:host={$host};dbname={$dbname};charset=utf8mb4", $username, $password);
     return $pdo;
 }
 
