@@ -1,4 +1,4 @@
-<h1>Cada carpeta cuenta con su propio Dockerfile y/o Docker Compose</h1>
+<h3>Cada carpeta cuenta con su propio Dockerfile y/o Docker Compose</h3>
 
 <table border="1" align="center">
   <tr>
