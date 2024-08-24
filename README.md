@@ -1,5 +1,7 @@
 <h3>Cada carpeta cuenta con su propio Dockerfile y/o Docker Compose</h3>
 
+<hr/>
+
 <table border="1" align="center">
   <tr>
     <th>Carpeta</th>
